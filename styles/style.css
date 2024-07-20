@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+}
+
+/* shared style */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* navbar styles */
+nav ul li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+}
