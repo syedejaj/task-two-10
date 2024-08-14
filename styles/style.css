@@ -7,28 +7,144 @@
 }
 
 * {
+    margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 /* shared style */
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+i {
+    color: white;
+}
+
+.fa-bars {
+    display: none;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+
+}
+
+h1 {
+    color: white;
+    font-size: 78px;
+    font-weight: 900;
+}
+
+h2 {
+    color: white;
+}
+
+.btn-primary {
+    border-radius: 42px;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: rgb(230, 83, 60);
+}
+
+.btn-secondary {
+    border-radius: 42px;
+    border: 1px solid white;
+    border-radius: 2.5rem;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.shape {
+
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 /* navbar styles */
-nav ul li {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    border: 1px solid gainsboro;
+    border-radius: 2rem;
+    padding: 0.2rem;
+}
+
+.home {
+    background-color: rgb(230, 83, 60);
+    color: white;
+    border-radius: 2rem;
+    padding: 4px 8px;
+}
+
+/* nav ul li {
     list-style: none;
+    margin-left: 3rem;
 }
 
 nav li a {
     text-decoration: none;
 }
 
-.navbar {
-    display: flex;
-}
-
 .navbar ul {
     display: flex;
+    border: 2px solid black;
+} */
+
+.brand-name {
+    color: rgb(230, 83, 60);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* banner styles  */
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* mobile devices  */
+@media screen and (max-width:576px) {
+    .fa-bars {
+        display: block;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
 }
