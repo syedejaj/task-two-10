@@ -9,7 +9,11 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
     background-color: black;
+    color: white;
 }
 
 /* shared style */
@@ -50,6 +54,8 @@ h2 {
 
 h4 {
     color: white;
+    font-size: 28px;
+    font-weight: 900;
 }
 
 .btn-primary {
@@ -70,6 +76,7 @@ h4 {
     padding: 16px 40px;
     font-size: 18px;
     font-weight: 600;
+    background-color: black;
     color: white;
 }
 
@@ -185,6 +192,88 @@ nav li a {
     margin-bottom: 2rem;
 }
 
+/* extra mile styles */
+.mile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.extra-mile {
+    display: grid;
+    grid-template-columns: 0.7fr 0.5fr;
+    gap: 2rem;
+    background-color: rgb(34, 34, 34);
+    padding: 2.5rem 3.2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.mile-image img {
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+}
+
+/* bmi calculator styles  */
+.chart,
+.bmi-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculator {
+    background-color: rgb(34, 34, 34);
+}
+
+.bmi-content {
+    display: flex;
+    gap: 4.5rem;
+    padding: 3rem 9rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: start;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-content input,
+.form-content select,
+form>select {
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form>select {
+    width: 31rem;
+}
+
 /* mobile devices  */
 @media screen and (max-width:576px) {
     .fa-bars {
@@ -202,4 +291,15 @@ nav li a {
     .habits {
         grid-template-columns: 1fr;
     }
+
+    .extra-mile {
+        grid-template-columns: 1fr;
+    }
+
+    .bmi-content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+
 }
